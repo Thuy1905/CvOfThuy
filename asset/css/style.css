@@ -2,7 +2,7 @@
 
 *{
     margin: 0;
-    padding: 0;
+    padding: 3px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
@@ -46,8 +46,8 @@ body
     position: relative;
     width: 200px;
     height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
+    /* border-radius: 50%;
+    overflow: hidden; */
 }
 .profileText .imgBx img 
 {
@@ -61,7 +61,7 @@ body
 .profileText h2 
 {
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-top: 20px;
     text-transform: uppercase;
     text-align: center;
@@ -71,7 +71,7 @@ body
 .profileText h2 span
 {
     font-size: 0.8em;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .contactInfo {
@@ -240,6 +240,17 @@ p
     .skills .box
     {
     	grid-template-columns: repeat(1,1fr);
+    }
+
+}
+/* Mobile */
+@media only screen and (max-width: 740px) {
+    .container {
+        flex-direction: column;
+        grid-template-columns: none;
+    }
+    .about.skill ul {
+        list-style: none;
     }
 
 }
